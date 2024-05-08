@@ -24,3 +24,12 @@
 ## 项目启用
 
 yarn dev
+
+
+## 项目使用的三方库
+
+* nanoid // 轻量级 随机字符串生器
+* redux
+* sass
+* antd
+* vite

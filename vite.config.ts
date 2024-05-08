@@ -27,7 +27,7 @@ export default defineConfig({
   // css:{
   //   preprocessorOptions:{ // 注册全局样式
   //     scss:{
-  //       xxx:`@import "./src/styles/sass"`
+  //       common:`@import "@/styles/common.scss"`,
   //     }
   //   }
   // }
