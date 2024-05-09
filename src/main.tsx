@@ -1,14 +1,18 @@
 // import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.tsx'
-import sotre from '@/store'
+import sotre,{persistor} from '@/store'
 import { Provider } from "react-redux";
+import {PersistGate} from 'redux-persist/integration/react'
+import App from './App.tsx'
+
 import './index.scss'
 import '@/styles/common.scss'
 ReactDOM.createRoot(document.getElementById('root')!).render(
   // <React.StrictMode> // 取消严格模式
   <Provider store={sotre}>
-    <App />
+    <PersistGate loading={null} persistor={persistor}>
+      <App />
+    </PersistGate>
   </Provider>
   // </React.StrictMode>,
 )
