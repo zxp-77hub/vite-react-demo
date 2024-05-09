@@ -46,8 +46,8 @@ export default function Footer(){
         <span className='footerSpan ellipsis'>已完成{doneInfoList.length}/未完成{notDoneInfoList.length}</span>
       </div>
       <div className='footer-right'>
-        <Button type='primary' onClick={handeleShowState} size='small' className='deleteAllBtn'>{showAllNoDone ? '显示所有': '仅显示未完成'}</Button>
-        <Button type='primary' danger={true} onClick={handleDeleteAllDone} size='small' className='deleteAllBtn'>删除所有已完成</Button>
+        <Button disabled={!todoList.length} type='primary' onClick={handeleShowState} size='small' className='deleteAllBtn'>{showAllNoDone ? '显示所有': '仅显示未完成'}</Button>
+        <Button disabled={!doneInfoList.length} type='primary' danger={true} onClick={handleDeleteAllDone} size='small' className='deleteAllBtn'>删除所有已完成</Button>
       </div>
     </div>
     {contextHolder}
