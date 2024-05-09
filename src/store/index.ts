@@ -1,5 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit";
-import todoReducer from "./todoReducer";
+import todoReducer from "./todoInfo";
 
 const store = configureStore({
   reducer:{
@@ -13,7 +13,9 @@ export type Store = ReturnType<typeof store.getState>
 export * from "./interface"
 export  {
   addTodoList,
-  changeShowInfo,
   deleteTodoList,
-  changeInfoState
-}  from "./todoReducer";
+  deleteAllDone,
+  changeInfoState,
+  changeShowInfo,
+  allTodoDone,
+}  from "./todoInfo";

@@ -3,4 +3,10 @@ export interface ITodoInfo {
   text: string;
   isDone: boolean;
 }
+
 export type ITodoList = Array<ITodoInfo|any>;
+
+export interface ITodoInfoState {
+  todoList: ITodoList;
+  showAllNoDone: boolean;
+}

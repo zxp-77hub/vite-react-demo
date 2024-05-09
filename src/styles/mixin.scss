@@ -1,3 +1,13 @@
 $blue: #3190e8;  
 $bc: #e4e4e4;
 $fc:#fff;
+
+@mixin checkBox($w,$h){
+  display: inline-block;
+  width: $w;
+  height: $h;
+  margin: 0 10px;
+}
+@mixin hoverDom{
+  background-color:$bc;
+}

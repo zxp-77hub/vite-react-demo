@@ -1,6 +1,8 @@
 import InputTodo from "@components/InputTodo";
 import TodoList from "@components/TodoList";
-import './todoInfo.scss'
+import Footer from "@components/Footer";
+
+import './index.scss'
 
 export default function TodoInfo() {
  
@@ -9,7 +11,7 @@ export default function TodoInfo() {
       <div className="todoInfoBox">
         <InputTodo/>
         <TodoList/>
-        {/* <Footer/> */}
+        <Footer/>
       </div>
     </>
   )

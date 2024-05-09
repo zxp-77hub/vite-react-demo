@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+// import sassPlugin from 'vite-plugin-sass'
 import path from 'path'
 
 // https://vitejs.dev/config/
@@ -23,12 +24,4 @@ export default defineConfig({
       '@components': path.resolve(__dirname, './src/components'), // 定义别名'components'指向组件目录
     },
   }
-  // ,
-  // css:{
-  //   preprocessorOptions:{ // 注册全局样式
-  //     scss:{
-  //       common:`@import "@/styles/common.scss"`,
-  //     }
-  //   }
-  // }
 })
