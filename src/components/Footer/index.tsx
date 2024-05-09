@@ -23,7 +23,7 @@ export default function Footer(){
     const confirmed = await modal.confirm({
       title:`是否删除所有已完成项`
     })
-    console.log('confirmed',confirmed);
+    
     if (confirmed) {
       dispatch(deleteAllDone())
     }

@@ -10,8 +10,8 @@ import{
 export default function TodoList(){
   const todoInfoState:ITodoInfoState = useSelector((sotre:Store)=>sotre.todoInfo)
   const {todoList=[],showAllNoDone} = todoInfoState
+
   let showList:ITodoList = todoList;
-  console.log('todo-list', showList,showAllNoDone);
   
   if(showAllNoDone){
     showList= todoList.filter(item=>!item.isDone) || []
@@ -20,6 +20,7 @@ export default function TodoList(){
   if (!showList.length) {
     return(<></>);
   }
+  
   return (
     <ul className="toList">
     {

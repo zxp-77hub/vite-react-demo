@@ -17,18 +17,10 @@ export const todoSlice = createSlice({
       })
     },
     allTodoDone:(state)=>{
-      console.log('测试');
-      console.log(state);
-      
       state.todoList=state.todoList.map(item=>{
-        console.log(item.isDone);
-        
         item.isDone=!item.isDone
         return item
       })
-      console.log(state.todoList);
-      
-     
     },
     deleteTodoList:(state,action)=>{
       state.todoList=state.todoList.filter(todoInfo=>todoInfo.id !== action.payload.id)
