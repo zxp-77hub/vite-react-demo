@@ -14,7 +14,7 @@ export default function Footer(){
   const dispatch = useDispatch()
   const  [modal, contextHolder] = Modal.useModal()
   const todoInfoState:ITodoInfoState = useSelector((sotre:Store)=>sotre.todoInfo)
-  const {todoList,showAllNoDone} = todoInfoState
+  const {todoList,showAllNoDone, isAllDone} = todoInfoState
 
   const doneInfoList = todoList.filter(item=>item.isDone) || []
   const notDoneInfoList = todoList.filter(item=>!item.isDone) || []
@@ -42,7 +42,7 @@ export default function Footer(){
    <>
     <div className='footerBox'>
       <div className='footerLeft'>
-        <input type="checkbox" defaultChecked={showAllNoDone} onChange={chooseAllDone} className='checkBox'/>
+        <input type="checkbox" checked={!todoList.length ? false:isAllDone} onChange={chooseAllDone} className='checkBox'/>
         <span className='footerSpan ellipsis'>已完成{doneInfoList.length}/未完成{notDoneInfoList.length}</span>
       </div>
       <div className='footer-right'>
