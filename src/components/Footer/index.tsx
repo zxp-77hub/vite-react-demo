@@ -7,7 +7,7 @@ import{
   ITodoInfoState,
   Store
 } from '@/store'
-import '@components/Footer/index.scss'
+import styles from '@components/Footer/index.module.scss'
 
 
 export default function Footer(){
@@ -40,14 +40,14 @@ export default function Footer(){
 
   return (
    <>
-    <div className='footerBox'>
-      <div className='footerLeft'>
-        <input type="checkbox" checked={!todoList.length ? false:isAllDone} onChange={chooseAllDone} className='checkBox'/>
-        <span className='footerSpan ellipsis'>已完成{doneInfoList.length}/未完成{notDoneInfoList.length}</span>
+    <div className={styles.footerBox}>
+      <div className={styles.footerLeft}>
+        <input type="checkbox" checked={!todoList.length ? false:isAllDone} onChange={chooseAllDone} className={styles.checkBox}/>
+        <span className='ellipsis'>已完成{doneInfoList.length}/未完成{notDoneInfoList.length}</span>
       </div>
-      <div className='footer-right'>
-        <Button disabled={!todoList.length} type='primary' onClick={handeleShowState} size='small' className='deleteAllBtn'>{showAllNoDone ? '显示所有': '仅显示未完成'}</Button>
-        <Button disabled={!doneInfoList.length} type='primary' danger={true} onClick={handleDeleteAllDone} size='small' className='deleteAllBtn'>删除所有已完成</Button>
+      <div className={styles.footerRight}>
+        <Button disabled={!todoList.length} type='primary' onClick={handeleShowState} size='small' className={styles.deleteAllBtn}>{showAllNoDone ? '显示所有': '仅显示未完成'}</Button>
+        <Button disabled={!doneInfoList.length} type='primary' danger={true} onClick={handleDeleteAllDone} size='small' className={styles.deleteAllBtn}>删除所有已完成</Button>
       </div>
     </div>
     {contextHolder}

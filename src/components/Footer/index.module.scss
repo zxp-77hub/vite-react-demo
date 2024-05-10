@@ -14,7 +14,13 @@
   justify-content: flex-start;
   align-items:center;
 }
-.footer-right {
+.checkBox{
+  @include checkBox(16px,16px);
+}
+.checkBox:hover{
+  @include hoverDom
+}
+.footerRight {
   height:100%;
   display: flex;
   justify-content: flex-start;

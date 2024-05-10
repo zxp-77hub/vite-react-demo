@@ -1,7 +1,7 @@
 import { useDispatch } from 'react-redux'
 import{deleteTodoList,changeInfoState, ITodoInfo} from '@/store'
 import { Button, Modal} from 'antd'
-import '@components/Item/index.scss'
+import styles from '@components/Item/index.module.scss'
 interface IProps{
   todoInfo: ITodoInfo;
 }
@@ -29,11 +29,11 @@ export default function Item({todoInfo}:IProps){
 
   return (
    <>
-    <li key={todoInfo.id} className="itemBox">
-      <input type="checkbox" checked={todoInfo.isDone} onChange={handleChange(todoInfo)} className='checkBox'/>
-      <span className='info ellipsis'>{todoInfo.text}</span>
-    <div className='rightBox'>
-      <Button danger={true} onClick={()=>handeleDeleteTodo(todoInfo.id)} size='small' className='deleteBtn'>删除</Button>
+    <li key={todoInfo.id} className={styles.itemBox}>
+      <input type="checkbox" checked={todoInfo.isDone} onChange={handleChange(todoInfo)} className={styles.checkBox}/>
+      <span className={styles.info + ' ellipsis'}>{todoInfo.text}</span>
+    <div className={styles.rightBox}>
+      <Button danger={true} onClick={()=>handeleDeleteTodo(todoInfo.id)} size='small' className={styles.deleteBtn}>删除</Button>
     </div>
     </li>
     {contextHolder}
