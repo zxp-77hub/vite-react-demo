@@ -22,17 +22,24 @@
 3. 附加要求 10000条数据如何处理渲染性能
 
    处理方案：1.虚拟列表 2.分页显示3.懒加载
-4. 未处理部分
-     sass 样式隔离,避免css样式污染
 
 ## 项目启用
 
 yarn dev
 
-## 项目使用的三方库
+## todo项目使用的三方库
 
 * nanoid // 轻量级 随机字符串生器
 * redux
 * sass
 * antd
 * vite
+* redux-persist // 数据 redux 持久化
+* nanoid // 随机生成字符串
+
+## 其它功能使用库
+
+* react-router
+* sort-by // 排序使用库
+* localforage  // Web Storage API
+* match-sorter // 前端数组处理库

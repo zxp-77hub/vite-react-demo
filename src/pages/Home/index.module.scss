@@ -1,0 +1,23 @@
+.navBox{
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-items: flex-start;
+  border: 1px solid $bc;
+  .navBar{
+    width: 100%;
+    height: 36px;
+    display: flex;
+    border-bottom: 1px solid $bc;
+    padding-left: 10px;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .navBar:hover{
+    color:$hoverColor;
+    background-color: $hoverBc;
+  }
+  .navBar:last-of-type{
+    border-bottom:none;
+  }
+}

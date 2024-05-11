@@ -1,6 +1,8 @@
 $blue: #3190e8;  
 $bc: #e4e4e4;
 $fc:#fff;
+$hoverColor: #3eaf7c;
+$hoverBc: #e8eeee;
 
 @mixin checkBox($w,$h){
   display: inline-block;
