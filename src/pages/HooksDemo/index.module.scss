@@ -1,0 +1,22 @@
+.demoBox{
+  margin-bottom: 10px;
+  border: 1px solid $bc;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  .button{
+    margin-right: 10px;
+    span{
+      color: $blue;
+    }
+  }
+  .button:last-of-type{
+    margin-right:0;
+  }
+  .title{
+    display: flex;
+    justify-content: flex-start;
+    font-size: 12px;
+    font-weight: 600;
+  }
+}
