@@ -14,9 +14,22 @@
     margin-right:0;
   }
   .title{
+    color: $blue;
+    cursor: pointer;
     display: flex;
     justify-content: flex-start;
     font-size: 12px;
     font-weight: 600;
   }
+}
+
+.width150{
+  width: 150px;
+}
+
+.loading{
+  background-color: #e3e;
+}
+.done{
+  background-color: $blue;
 }

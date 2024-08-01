@@ -15,6 +15,7 @@ import DemoUseTransition from '@/pages/HooksDemo/DemoUseTransition';
 
 
 export default function HooksDemo(){
+  console.log('hooks 总组件加载');
   
   return<>
     <DemoUseState title='UseState'/>

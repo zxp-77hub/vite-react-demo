@@ -5,7 +5,7 @@ import {
 } from "react";
 import { IDemoProps } from "@/pages/HooksDemo/type";
 import HooksBox from "@/pages/HooksDemo/HooksBox";
-import styles from "@/pages/HooksDemo/index.module.scss";
+// import styles from "@/pages/HooksDemo/index.module.scss";
 
 export default function HooksDemo({title}: IDemoProps){
   const [count,setCount] = useState(0)

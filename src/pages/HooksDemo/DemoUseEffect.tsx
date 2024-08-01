@@ -4,7 +4,7 @@ import {
 } from "react";
 import { IDemoProps } from "@/pages/HooksDemo/type";
 import HooksBox from "@/pages/HooksDemo/HooksBox";
-import styles from "@/pages/HooksDemo/index.module.scss";
+// import styles from "@/pages/HooksDemo/index.module.scss";
 // 这个最次方案,可用UseRef替换
 let timeId: any;
 

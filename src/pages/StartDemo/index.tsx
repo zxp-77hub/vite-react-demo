@@ -1,6 +1,5 @@
 import { Component, ReactNode } from 'react'
 import UseInfo,{IUserInfo} from "@/pages/StartDemo/component/UserInfo";
-import { NavLink } from "react-router-dom";
 export interface IStartDemoState{
   count: number;
   userInfo: Array<IUserInfo>|null;
@@ -29,7 +28,6 @@ export default class StartDemo extends Component<IStartDemoProps,IStartDemoState
     const { count,userInfo } = this.state;
     return (
     <>
-    <NavLink to="/todo">todo</NavLink>
       <div onClick={this.handleClick}>
         {count}
       </div>
