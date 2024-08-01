@@ -1,0 +1,37 @@
+.loginBox{
+  margin: 100px auto;
+  width: 400px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  border: 1px solid #ebb;
+  border-radius:10px;
+
+}
+.loginTitle{
+  margin-bottom: 20px;
+}
+
+.formBox{
+  width: 100%;
+}
+
+.buttonBox{
+  display: flex;
+  justify-content:center;
+  .button{
+    margin-right: 12px;
+  }
+}
+.forgetButton{
+  cursor: pointer;
+  color: rgb(128, 169, 115);
+}
+.forgetButton:hover{
+  color: rgb(120, 209, 205);
+}
+.forgetButton:checked{
+  color: rgb(160, 16, 28);
+}

@@ -1,0 +1,61 @@
+.goodsBox{
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.categoryBox{
+  width: 100px;
+  height: 100%;
+  border-right: 1px solid #eee;
+  // background-color:lawngreen;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+.category{
+  display: flex;
+  width: 100%;
+  height: 36px;
+  // margin: 0 2px;
+  color: rgb(106, 98, 98);
+  cursor: pointer;
+  justify-content:center;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  border-radius: 3px;
+}
+.category:hover{
+  color: #0056b3;
+  // background-color: rgb(234, 222, 222);
+}
+.activeCategory{
+  color: #004085;
+  background-color: #fff;
+}
+.goodsListBox{
+  max-width: 1280px;
+  width: 1280px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.searchBox{
+  height:32px;
+  display: flex;
+  margin-bottom: 10px;
+  padding: 0 10px;
+  }
+.search{
+  width: 60%;
+  margin-right: 10px;
+}
+.mr10{
+  margin-right:10px
+}
+.table{
+  flex: 1;
+  padding:  0 10px;
+  margin-bottom: 10px;
+  overflow-y: auto;
+}
